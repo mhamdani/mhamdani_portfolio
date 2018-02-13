@@ -851,9 +851,9 @@ function validateField ( field ) {
 
 	// Test the name field
 	if ( field.attr("name") === "name" ) {
-		if ( !validateLength( value, 2 ) ) {
+		if ( !validateLength( value, 1 ) ) {
 					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> The name is too short!<br>';
+					errorText += '<i class="fa fa-info-circle"></i> The name is too short<br>';
 					$('input[name="name"]').addClass('input-error');
 		} else {
 			$('input[name="name"]').removeClass('input-error');
@@ -861,7 +861,7 @@ function validateField ( field ) {
 
 		if ( !expLettersOnly.test( value ) ) {
 					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> The name can contain only letters and spaces!<br>';
+					errorText += '<i class="fa fa-info-circle"></i> The name can contain only letters and spaces<br>';
 					$('input[name="name"]').addClass('input-error-2');
 		} else {
 			$('input[name="name"]').removeClass('input-error-2');
@@ -872,7 +872,7 @@ function validateField ( field ) {
 	if ( field.attr("name") === "email" ) {
 		if ( !expEmail.test( value ) ) {
 					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> Enter correct email address!<br>';
+					errorText += '<i class="fa fa-info-circle"></i> Enter correct email address<br>';
 					$('input[name="email"]').addClass('input-error');
 		} else {
 			$('input[name="email"]').removeClass('input-error');

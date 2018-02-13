@@ -4,7 +4,7 @@ if(isset($_POST['email'])) {
 
     $email_to = "michellehamdani@gmail.com";
 
-    $email_subject = "Michelle Website - Email";
+    $email_subject = "New email from Portfolio Site";
 
 
     function died($error) {

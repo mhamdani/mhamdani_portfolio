@@ -401,21 +401,21 @@
           <div class="contact-wrapper">
 
                 <!-- Contact Form -->
-                      <div class="row" id="form-messages">
-                        <form action="assets/contact-form/mailer.php" method="POST" id="ajac-contact" class="field">
+                      <div class="row">
+                        <form action="assets/contact-form/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
                           <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
 
                             <!-- Name -->
                             <div class="form-group">
-                              <input type="text" name="name" id="name" class="form-control validate-locally" placeholder="Enter your name">
-                              <label for="name">Name</label>
+                              <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
+                              <label for="name-contact-1">Name</label>
                               <span class="pull-right alert-error"></span>
                             </div>
 
                             <!-- Email -->
                             <div class="form-group">
-                              <input type="email" name="email" id="email" class="form-control validate-locally" placeholder="Enter your email">
-                              <label for="email">Email</label>
+                              <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
+                              <label for="email-contact-1">Email</label>
                               <span class="pull-right alert-error"></span>
                             </div>
 
@@ -425,8 +425,8 @@
 
                             <!-- Message -->
                             <div class="form-group">
-                              <textarea name="message" id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
-                              <label for="message">Message</label>
+                              <textarea name="message" id="message-contact-1" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                              <label for="message-contact-1">Message</label>
                             </div>
                             <div>
                               <input type="submit" class="btn pull-right" value="Send Message">
@@ -545,8 +545,7 @@
         <script src="assets/js/jquery.ajaxchimp.js"></script>
         <script src="assets/js/animDots.js"></script>
 
-        <!-- Contact and Main JS -->
-	      <script src="app.js"></script>
+        <!-- JS -->
         <script src="assets/js/main.js"></script>
     </body>
 </html>
