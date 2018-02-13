@@ -2,16 +2,9 @@
 
 if(isset($_POST['email'])) {
 
+    $email_to = "michellehamdani@gmail.com";
 
-
-    // ADD YOUR EMAIL WHERE YOU WANT TO RECIEVE THE MESSAGES
-
-    $email_to = "your.email@mail.com";
-
-    $email_subject = "Definity - Contact Form";
-
-
-
+    $email_subject = "Michelle Website - Email";
 
 
     function died($error) {
